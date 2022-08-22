@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'Playfair';
+    src: url(/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@1,300&display=swap');
+
+@keyframes animation {
+    0% {background-color: aliceblue;}
+    25% {background-color: aqua;}
+    50% {background-color: skyblue;}
+    100% {background-color: pink;}
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'playfair';
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 50px;
+    overflow: hidden;
+}
+
+.logo {
+    position:absolute;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.nav a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 5px 10px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: white;
+    border-radius: 10px;
+}
+
+.dropdown {
+    overflow: hidden;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-size: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding-top: 8px;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    margin: 2px;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav input[type=text] {
+    padding: 3px;
+    border: none;
+    font-size: 14px;
+}
+
+.search-container {
+    display: flex;
+    margin: 10px;
+}
+
+.search-container form button {
+    padding: 4px;
+    width: 30px;
+}
+
+.top-section {
+    position: relative;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+}
+
+.top-section img {
+    width: 100vw;
+}
+
+#top-section {
+    background-image: url('/images/sci-fi/solarisland.jpg');
+}
+
+.top-section .top-caption {
+    display: flex;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.top-section h4 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.top-caption:hover {
+    position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  
+}
+
+.top-caption span:hover {
+    position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: wavy 1s;
+  animation-delay: calc(2s * var(++i));
+}
+
+@keyframes wavy {
+    0%,40%,100% {
+      transform: translateY(0px)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+}
+
+audio {
+    display: none;
+}
+
+/* .realfilms {
+    display: flex;
+    justify-content: center;
+}
+
+.realfilms div{
+    color: white;
+    position: inherit;
+    font-size: 80px;
+}
+*/
+
+
+#r {
+    color: skyblue;
+}
+
+#e {
+    color: skyblue;
+}
+
+#e1 {
+    color: skyblue;
+}
+
+#l {
+    color: skyblue;
+}
+
+#f {
+    color: white;
+}
+
+#i {
+    color: white;
+}
+
+#l {
+    color: skyblue;
+}
+
+#m {
+    color: white;
+}
+
+#s {
+    color: white;
+}
+
+.blog-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:stretch;
+    align-content:space-between;
+    padding: 30px;
+    margin: 30px;
+    font-family: 'Spectral';
+    color: black;
+}
+
+.blog-body h1 {
+    width: 100%;
+    text-align: center;
+    margin: 15px;
+    font-size: 30px;
+    color: black;
+}
+
+.line {
+    display: flex;
+    background-color: black;
+    border-radius: 50px;
+    width: 90%;
+    height: 1px;
+    margin-bottom: 30px;  
+}
+
+.blog-body a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.blog-body img {
+    height: 400px;
+    width: auto;
+}
+
+
+.entry-container {
+    display: inline-block;
+    margin: 10px;
+    width: 450px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.entry-container a {
+    display: inline-flexbox;
+    justify-content: center;
+    font-size: 15px;
+    color: black;
+    margin: 10px;
+}
+
+.entry-container a:hover {
+    color: #cc5454;
+}
+
+.entry-container a img{
+    margin: auto;
+    width: auto;
+    transition: 200ms;
+}
+
+.entry-container a img:hover {
+    transform: scale(1.02);
+}
+
+.entry-container p {
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    height: 150px;
+    background-color: lightblue;
+    color: black;
+    justify-content: space-evenly;
+    padding: 15px;
+    overflow: hidden;
+}
+
+footer a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.bottom-footer {
+    display: flex;
+    padding: 3px;
+}
+
+.social {
+    height: 25px;
+    margin: 0;
+    padding: 3px;
+    width: 100%;
+    display: inline;
+}
